@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Guia visual de bobines per a distribuïdores DA.">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Bobines DA">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <title>Bobines DA</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="stylesheet" href="tmb-return.css">
+  <style>
+    html:not(.access-approved) #flutter_host,.access-approved #access-status{display:none}
+    #access-status{position:fixed;inset:var(--return-height) 0 0;display:grid;place-content:center;text-align:center;padding:24px;background:#f4f7fb;color:#0b2948;font:500 16px system-ui,sans-serif;z-index:900}
+    #access-retry{margin:14px auto 0;padding:10px 16px;border:0;border-radius:9px;background:#0b2948;color:white;font:600 15px system-ui,sans-serif}
+  </style>
+</head>
+<body>
+  <header class="tmb-return"><a href="https://roberfernandez.github.io/tmb-agent/">← TMB Agent</a></header>
+  <section id="access-status"><div><p id="access-message">Comprovant el teu accés…</p><button id="access-retry" hidden>Tornar-ho a provar</button></div></section>
+  <div id="flutter_host"></div>
+  <script type="module" src="bobines-access.js"></script>
+</body>
+</html>
